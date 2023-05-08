@@ -12,12 +12,14 @@ adressClose.addEventListener("click", function() {
 })
 
 
-// ------ Slider ------
+
+
+// ----------------------- Slider ------------------------------
 const rightBtn = document.querySelector(".fa-chevron-right");
 const leftBtn = document.querySelector(".fa-chevron-left");
 const imgNumber = document.querySelectorAll(".slider-content-left-top img");
 let index = 0;
-console.log(imgNumber.length)
+// console.log(imgNumber.length)
 
 rightBtn.addEventListener("click", function() {
     // console.log("oke")
@@ -37,7 +39,9 @@ leftBtn.addEventListener("click", function() {
 })
 
 
-// ------ Slider li bottom click item --------
+
+
+// ------------------------ Slider li bottom click item ---------------------
 const imgNumberLi = document.querySelectorAll(".slider-content-left-bottom li")
 // console.log(imgNumberLi)
 
@@ -55,7 +59,8 @@ function removeActive() {
 }
 
 
-//  ------ Slider auto slide ---------
+
+//  ------------------------------ Slider auto slide --------------------------
 function imgAuto() {
     index = index + 1;
     if(index > imgNumber.length-1) {
@@ -67,3 +72,28 @@ function imgAuto() {
     // console.log(index)
 }
 setInterval(imgAuto, 5000)
+
+
+
+
+// ------------------------- Slider Product ----------------------------------
+const rightBtnPro = document.querySelector(".fa-chevron-right-Pro");
+const leftBtnPro = document.querySelector(".fa-chevron-left-Pro");
+const imgNumberPro = document.querySelectorAll(".slider-product-one-content-items");
+
+rightBtnPro.addEventListener("click", function() {
+    // console.log("oke")
+    index = index+1;
+    if(index > imgNumberPro.length-1) {
+        index = 0;
+    }
+    document.querySelector(".slider-product-one-content-items-content").style.right = index * 100 + "%";
+})
+
+leftBtnPro.addEventListener("click", function() {
+    index = index-1
+    if(index <= 0) {
+        index = imgNumberPro.length-1;
+    }
+    document.querySelector(".slider-product-one-content-items-content").style.right = index * 100 + "%";
+})
