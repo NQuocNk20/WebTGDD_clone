@@ -85,6 +85,15 @@ a {
     color: #000;
     font-size: 12px;
 }
+nav ul li:nth-child(2) {
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ffbc06;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+}
 
 nav ul li:nth-child(2) i {
     color: #000;
@@ -195,7 +204,7 @@ nav ul li:nth-child(6) a:hover,
 nav ul li:nth-child(8) a:hover,
 nav ul li:nth-child(9) a:hover,
 nav ul li:nth-child(10) a:hover {
-    color: #fcfcfc;
+    color: #288ad6;
 }
 
 /* ==================== MENU-BAR ============================ */
