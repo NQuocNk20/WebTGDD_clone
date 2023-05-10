@@ -3,8 +3,9 @@ function scrollToTop () {
     window.scrollTo(0, 0)
 }
 
-// ------------------------
 
+
+// ------------------------
 const adressBtn = document.querySelector('#adress-form');
 const adressClose = document.querySelector('#adress-close');
 
@@ -17,6 +18,9 @@ adressBtn.addEventListener("click", function () {
 adressClose.addEventListener("click", function () {
     document.querySelector('.adress-form').style.display = "none";
 })
+
+
+
 
 
 
@@ -48,6 +52,8 @@ leftBtn.addEventListener("click", function () {
 
 
 
+
+
 // ------------------------ Slider li bottom click item ---------------------
 const imgNumberLi = document.querySelectorAll(".slider-content-left-bottom li")
 // console.log(imgNumberLi)
@@ -67,6 +73,10 @@ function removeActive() {
 
 
 
+
+
+
+
 //  ------------------------------ Slider auto slide --------------------------
 function imgAuto() {
     index = index + 1;
@@ -79,6 +89,10 @@ function imgAuto() {
     // console.log(index)
 }
 setInterval(imgAuto, 5000)
+
+
+
+
 
 
 
@@ -104,6 +118,47 @@ leftBtnPro.addEventListener("click", function () {
     }
     document.querySelector(".slider-product-one-content-items-content").style.right = index * 100 + "%";
 })
+
+
+
+
+
+
+
+
+// --------------------------- Slide Product Gallery 2 ----------------------
+const rightBtnProGal = document.querySelector(".rightBtnProGal-js");
+const leftBtnProGal = document.querySelector(".leftBtnProGal-js");
+const imgNumberProGal = document.querySelectorAll(".product-gallery-two-content-left-bottom-items");
+
+rightBtnProGal.addEventListener("click", function () {
+    // console.log("oke")
+    index = index + 1;
+    if (index > imgNumberProGal.length - 1) {
+        index = 0;
+    }
+    document.querySelector(".product-gallery-two-content-left-bottom-content").style.right = index * 100 + "%";
+})
+
+leftBtnProGal.addEventListener("click", function () {
+    index = index - 1
+    if (index <= 0) {
+        index = imgNumberProGal.length - 1;
+    }
+    document.querySelector(".product-gallery-two-content-left-bottom-content").style.right = index * 100 + "%";
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ----------------- Scroll animate -------------------
