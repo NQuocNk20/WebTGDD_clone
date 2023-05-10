@@ -760,20 +760,21 @@ select {
     flex-wrap: wrap;
 }
 
-.product-gallery-content-product-item {
-    width: 19.8%;
+.product-gallery-content-product-items {
+    width: 19.7%;
     padding: 50px 12px;
     border: 1px solid #ddd;
     background-color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    gap: 0.2%;
+    gap: 0.3%;
     margin-bottom: 5px;
+    transform: all 1s ease;
 }
-.product-gallery-content-product-item:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px);
-    transition: all 0.1s ease;
+.product-gallery-content-product-items:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    /* transform: translateY(-15px); */
+    margin-top: -10px;
 }
 .product-gallery-content-product-item img {
     width: 100%;
@@ -817,8 +818,20 @@ select {
     color: #288ad6;
 }
 .texxxt {
-    height: 3500px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
 }
+.textCon {
+    margin: 300px 20px;
+}
+.textCon img {
+    width: 350px;
+}
+.textCon:hover {
+    box-shadow: 0 0 10px #000;
+}
+
 
 /* --------- SCROLL ANIMATE -------------------- */
 .scrollTop {
@@ -866,31 +879,31 @@ select {
 }
 
 .product-gallery-content-product-item:nth-child(2) {
-    transition-delay: 15ms;
+    transition-delay: 100ms;
 }
 .product-gallery-content-product-item:nth-child(3) {
-    transition-delay: 30ms;
+    transition-delay: 200ms;
 }
 .product-gallery-content-product-item:nth-child(4) {
-    transition-delay: 45ms;
+    transition-delay: 300ms;
 }
 .product-gallery-content-product-item:nth-child(5) {
-    transition-delay: 50ms;
+    transition-delay: 400ms;
 }
 .product-gallery-content-product-item:nth-child(6) {
-    transition-delay: 25ms;
+    transition-delay: 150ms;
 }
 .product-gallery-content-product-item:nth-child(7) {
-    transition-delay: 40ms;
+    transition-delay: 250ms;
 }
 .product-gallery-content-product-item:nth-child(8) {
-    transition-delay: 50ms;
+    transition-delay: 350ms;
 }
 .product-gallery-content-product-item:nth-child(9) {
-    transition-delay: 60ms;
+    transition-delay: 450ms;
 }
 .product-gallery-content-product-item:last-child {
-    transition-delay: 70ms;
+    transition-delay: 550ms;
 }
 
 

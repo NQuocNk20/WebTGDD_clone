@@ -143,22 +143,22 @@ leftBtnPro.addEventListener("click", function () {
 
 
 
-const observerProduct = new IntersectionObserver((entriesPRO) => {
-    entriesPRO.forEach((entryPro) => {
-        if (entryPro.isIntersecting) {
-            entryPro.target.classList.add('showRow');
-        } else {
-            entryPro.target.classList.remove('showRow');
-        }
-    });
-});
+// const observerProduct = new IntersectionObserver((entriesPRO) => {
+//     entriesPRO.forEach((entryPro) => {
+//         if (entryPro.isIntersecting) {
+//             entryPro.target.classList.add('showRow');
+//         } else {
+//             entryPro.target.classList.remove('showRow');
+//         }
+//     });
+// });
 
-const hiddenProGalle = document.querySelector('.product-gallery-content-product');
-const childElementsProduct = hiddenProGalle.querySelectorAll('.product-gallery-content-product-item');
-childElementsProduct.forEach((el) => {
-    el.classList.add('hiddenRow');
-    observerProduct.observe(el);
-});
+// const hiddenProGalle = document.querySelector('.product-gallery-content-product');
+// const childElementsProduct = hiddenProGalle.querySelectorAll('.product-gallery-content-product-item');
+// childElementsProduct.forEach((el) => {
+//     el.classList.add('hiddenRow');
+//     observerProduct.observe(el);
+// });
 
 // const hiddenElements = document.querySelectorAll('.hidden');
 // hiddenElements.forEach((el) => observer.observe(el));
