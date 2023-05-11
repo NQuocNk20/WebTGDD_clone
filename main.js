@@ -91,7 +91,27 @@ function imgAuto() {
 setInterval(imgAuto, 5000)
 
 
+// ------------------------- Slider Product flash sale ----------------------------------
+const rightBtnProFLS = document.querySelector(".fa-chevron-right-FLS-js");
+const leftBtnProFLS = document.querySelector(".fa-chevron-left-FLS-js");
+const imgNumberProFLS = document.querySelectorAll(".slider-product-flashSale-one-content-items");
 
+rightBtnProFLS.addEventListener("click", function () {
+    // console.log("oke")
+    index = index + 1;
+    if (index > imgNumberProFLS.length - 1) {
+        index = 0;
+    }
+    document.querySelector(".slider-product-flashSale-one-content-items-content").style.right = index * 100 + "%";
+})
+
+leftBtnProFLS.addEventListener("click", function () {
+    index = index - 1
+    if (index <= 0) {
+        index = imgNumberProFLS.length - 1;
+    }
+    document.querySelector(".slider-product-flashSale-one-content-items-content").style.right = index * 100 + "%";
+})
 
 
 
@@ -124,8 +144,6 @@ leftBtnPro.addEventListener("click", function () {
 
 
 
-
-
 // --------------------------- Slide Product Gallery 2 ----------------------
 const rightBtnProGal = document.querySelector(".rightBtnProGal-js");
 const leftBtnProGal = document.querySelector(".leftBtnProGal-js");
@@ -151,7 +169,38 @@ leftBtnProGal.addEventListener("click", function () {
 
 
 
+// The End Of The Date To Countdown To
+// 1000 milliseconds = 1 Second
+let countdownDate = new Date("Fri May 26 2023 00:32:57").getTime();
+// console.log(countdownDate); 
 
+
+let counter = setInterval(() => {
+
+    // Get Date Now
+    let dateNow = new Date().getTime();
+
+    // Find The Date Difference Between Now And Countdown Date
+    let dateDiff = countdownDate - dateNow;
+
+    // Get Time Units
+    // let days = Math.floor(dateDiff / 1000 / 60 /60 / 24);
+    let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((dateDiff % (1000 * 60  * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((dateDiff % (1000 * 60  * 60)) / (1000 * 60));
+    let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
+
+
+    document.querySelector('.days').innerHTML = days;
+    document.querySelector('.hours').innerHTML = hours;
+    document.querySelector('.minutes').innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+    document.querySelector('.seconds').innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+
+    if (dateDiff < 0) {
+        clearInterval(counter)
+    }
+
+}, 1000);
 
 
 
