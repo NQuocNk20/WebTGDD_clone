@@ -139,6 +139,27 @@ leftBtnPro.addEventListener("click", function () {
     document.querySelector(".slider-product-one-content-items-content").style.right = index * 100 + "%";
 })
 
+// ------------------------- Slider Product 2----------------------------------
+const rightBtnPro2 = document.querySelector(".fa-chevron-right-Pro2");
+const leftBtnPro2 = document.querySelector(".fa-chevron-left-Pro2");
+const imgNumberPro2 = document.querySelectorAll(".slider-product-two-content-items");
+
+rightBtnPro2.addEventListener("click", function () {
+    // console.log("oke")
+    index = index + 1;
+    if (index > imgNumberPro2.length - 1) {
+        index = 0;
+    }
+    document.querySelector(".slider-product-two-content-items-content").style.right = index * 100 + "%";
+})
+
+leftBtnPro2.addEventListener("click", function () {
+    index = index - 1
+    if (index <= 0) {
+        index = imgNumberPro2.length - 1;
+    }
+    document.querySelector(".slider-product-two-content-items-content").style.right = index * 100 + "%";
+})
 
 
 
