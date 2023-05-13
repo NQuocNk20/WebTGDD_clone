@@ -1574,7 +1574,221 @@ select {
     font-size: 12px;
 }
 
+/* -----------------------Service Convenience ----------------- */
+.service-conv {
+    display: block;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.name-box {
+    display: block;
+    padding: 15px 22px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333;
+    text-transform: uppercase;
+}
+.name-box a {
+    float: right;
+    text-transform: none;
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 
+.service-conv ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 22px 30px;
+}
+.service-conv ul li {
+    float: left;
+    width: 283px;
+    margin: 0 12px 0 0;
+    border-radius: 14px;
+    padding: 14px 10px;
+    background: #dceeff;
+    cursor: pointer;
+}
+.service-conv ul li a {
+    display: block;
+    overflow: hidden;
+}
+.service-conv li .box-iconv {
+    float: left;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+.service-conv li .box-iconv i {
+    padding: 10px;
+}
+.service-conv ul li:first-child .box-iconv {
+    background: #87c4fd;
+}
+.service-conv ul li:nth-child(2) .box-iconv {
+    background: #ffe77e;
+}
+.service-conv ul li:nth-child(3) .box-iconv {
+    background: #ffcb8c;
+;
+}
+.service-conv ul li:last-child .box-iconv {
+    background: #b4ff85;
+}
+.iconnewglobal-card {
+    background-position: -273px -89px;
+    width: 38px;
+    height: 38px;
+}
+.service-conv li .text-conv {
+    display: block;
+    overflow: hidden;
+}
+
+.service-conv li .text-conv small {
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333;
+}
+
+.service-conv li .text-conv small:first-child {
+    padding: 6px 0 12px;
+}
+.service-conv li .text-conv strong {
+    color: #ff0b0b;
+}
+.service-conv ul li:nth-child(2) {
+    background: #fef5cf;
+}
+.service-conv ul li:nth-child(3) {
+    background: #ffefdb;
+}
+.service-conv ul li:nth-child(4) {
+    background: #e1fecf;
+}
+
+
+/* -------------------------- option product gallery ------------------- */
+.option-sg {
+    display: flex;
+    overflow: hidden;
+    flex-flow: row;
+    padding: 0 0 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.option-sg a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 285px;
+    background: #fff;
+    border-radius: 8px;
+    height: 70px;
+    padding: 8px 0;
+}
+.option-sg a.active {
+    background-color: #feb70b;
+}
+.option-sg a.active span {
+    color: #222;
+    font-weight: 600;
+}
+.option-sg a img {
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    width: 50px;
+    height: auto;
+}
+
+.option-sg a span {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #555;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 8px 0 0 15px;
+}
+
+/* --------------------------Tech News ------------------------*/
+.tech-new {
+    float: left;
+    width: 895px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 20px;
+    border-radius: 12px;
+}
+.col2-tech {
+    display: flex;
+    align-items: stretch;
+    margin: 0 0 30px;
+}
+.name-box {
+    display: block;
+    padding: 15px 22px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333;
+    text-transform: uppercase;
+}
+.name-box a {
+    float: right;
+    text-transform: none;
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.tech-new ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 18px;
+}
+.tech-new ul li {
+    float: left;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 33%;
+    margin-right: 10px;
+}
+.tech-new ul li a {
+    display: block;
+    overflow: hidden;
+}
+.tech-new ul li img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+.tech-new ul li span {
+    display: block;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.bg-ctv {
+    display: block;
+    overflow: hidden;
+    max-width: 285px;
+}
 
 /* --------- SCROLL ANIMATE -------------------- */
 .scrollTop {
